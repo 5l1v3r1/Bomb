@@ -1,8 +1,4 @@
-%% escript fork-bomb.erl +P 134217727
-
-% It is worth noting the processes created by Erlang are restrained to the BEAM virtual machine and only dispatched and load balanced by that VM itself. 
-% They're NOT OS level threads. 
-% Hitting the limit of Erlang processes will thus only crash the Erlang VM and will not influence anything else. 
+%% escript bomb.erl +P 134217727
 
 -module(bomb).
 -export([loop/0]).
